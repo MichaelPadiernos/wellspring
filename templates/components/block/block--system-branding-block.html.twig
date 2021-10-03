@@ -24,15 +24,15 @@
 
 <div{{ attributes.addClass(classes)}}>
   {% if site_logo %}
-    {% include '@kumquats/partials/brand-logo.html.twig' %}
+    {% include '@wellspring/partials/brand-logo.html.twig' %}
   {% endif %}
   {% if site_name or site_slogan %}
-  <div id="block-kumquats-branding" class="brand-heading">
+  <div id="block-wellspring-branding" class="brand-heading">
     {% if site_name %}
-      {% include '@kumquats/partials/brand-name.html.twig' %}
+      {% include '@wellspring/partials/brand-name.html.twig' %}
     {% endif %}
     {% if site_slogan %}
-      {% include '@kumquats/partials/brand-slogan.html.twig' %}
+      {% include '@wellspring/partials/brand-slogan.html.twig' %}
     {% endif %}
   </div>
   {% endif %}
