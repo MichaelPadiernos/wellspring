@@ -1,0 +1,30 @@
+{
+  "name": "wellspring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stylus": "^2.7.0",
+    "gulp-terser-js": "^5.2.2",
+    "lazypipe": "^1.0.2",
+    "postcss": "^8.3.8",
+    "postcss-colorblind": "^1.0.0",
+    "postcss-font-magician": "^3.0.0",
+    "postcss-svgo": "^5.0.2",
+    "rupture": "^0.7.1",
+    "stylus": "^0.55.0",
+    "typographic": "^3.0.0"
+  }
+}

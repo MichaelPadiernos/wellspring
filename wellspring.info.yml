@@ -1,0 +1,20 @@
+name: Wellspring
+type: theme
+description: "Base theme created by Mike Padiernos"
+core_version_requirement: ^8 || ^9
+base theme: classy
+
+libraries:
+  - wellspring/global
+  
+regions:
+  header:       "Header"
+  navigation:   "Navigation"
+  hero:         "Hero"
+  highlight:    "Highlight"
+  help:         "Help"
+  content:      "Content"
+  aside:        "Aside"
+  footer:       "Footer"
+  actions:      "Actions"
+  disabled:     "Disable"

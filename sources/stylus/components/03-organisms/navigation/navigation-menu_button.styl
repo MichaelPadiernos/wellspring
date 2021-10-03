@@ -1,0 +1,17 @@
+.menu-button
+	display none
+	&:checked
+		~ .region-navigation
+			max-height 340px
+			width 100%
+			height 100%
+		~ .menu-icon
+			.nav-icon
+				background transparent
+				&:before
+					transform rotate(-45deg)
+					top 0
+					width 100%
+				&:after
+					transform rotate(45deg)
+					top 0

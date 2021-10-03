@@ -1,0 +1,42 @@
+.menu-icon
+	position relative
+	margin auto
+	cursor pointer
+	grid-column 3/4
+	height 100%
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	.nav-icon
+		background-color black
+		border-radius 1px
+		display block
+		height 4px
+		width 24px
+		position relative
+		transition background .2s ease-out
+		&:before
+			content ''
+			background-color black
+			border-radius 1px
+			display block
+			height 100%
+			width 65%
+			position absolute
+			transition all .2s ease-out
+			top 7px
+		&:after
+			content ''
+			background-color black
+			border-radius 1px
+			display block
+			height 100%
+			width 100%
+			position absolute
+			transition all .2s ease-out
+			top -7px
+
++above(l)
+	.menu-icon
+		display none
