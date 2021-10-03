@@ -2,8 +2,8 @@ global:
   version: 1.0
   css:
     theme:
-      assets/css/theme.css: {}
+      assets/css/wellspring.css: {}
   js:
-    assets/js/script.js: {}
+    assets/js/wellspring.js: {}
   dependencies:
     - core/jquery
