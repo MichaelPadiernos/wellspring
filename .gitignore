@@ -396,3 +396,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# git
+.git/
