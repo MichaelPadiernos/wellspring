@@ -10,7 +10,9 @@ specifiers:
   gulp-sourcemaps: ^3.0.0
   gulp-stylus: ^2.7.0
   gulp-terser-js: ^5.2.2
+  jeet: ^7.2.0
   lazypipe: ^1.0.2
+  mantis-querist: ^0.5.0
   postcss: ^8.3.8
   postcss-colorblind: ^1.0.0
   postcss-font-magician: ^3.0.0
@@ -29,7 +31,9 @@ devDependencies:
   gulp-sourcemaps: 3.0.0
   gulp-stylus: 2.7.0
   gulp-terser-js: 5.2.2
+  jeet: 7.2.0
   lazypipe: 1.0.2
+  mantis-querist: 0.5.0
   postcss: 8.3.8
   postcss-colorblind: 1.0.0
   postcss-font-magician: 3.0.0_postcss@8.3.8
@@ -722,6 +726,10 @@ packages:
       timsort: 0.3.0
     dev: true
 
+  /css-parse/1.7.0:
+    resolution: {integrity: sha1-Mh9s9zeCpv91ERE5D8BeLGV9jJs=}
+    dev: true
+
   /css-parse/2.0.0:
     resolution: {integrity: sha1-pGjuZnwW2BzPBcWMONKpfHgNv9Q=}
     dependencies:
@@ -1385,6 +1393,13 @@ packages:
       object.defaults: 1.1.0
     dev: true
 
+  /glob/3.2.11:
+    resolution: {integrity: sha1-Spc/Y1uRkPcV0QmH1cAP0oFevj0=}
+    dependencies:
+      inherits: 2.0.4
+      minimatch: 0.3.0
+    dev: true
+
   /glob/7.2.0:
     resolution: {integrity: sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==}
     dependencies:
@@ -1936,6 +1951,10 @@ packages:
     resolution: {integrity: sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=}
     dev: true
 
+  /jeet/7.2.0:
+    resolution: {integrity: sha512-TcUBVeb/PlBmiZRgqx/rHewXkyhnBzRANjPi99frE7FQcbXvnzH74IelKhdPlP94eBh/rI0T67B04yGaldWzTw==}
+    dev: true
+
   /jimp/0.2.28:
     resolution: {integrity: sha1-3VKak3GQ9ClXp5N9Gsw6d2KZbqI=}
     dependencies:
@@ -2212,6 +2231,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /lru-cache/2.7.3:
+    resolution: {integrity: sha1-bUUk6LlV+V1PW1iFHOId1y+06VI=}
+    dev: true
+
   /lru-queue/0.1.0:
     resolution: {integrity: sha1-Jzi9nw089PhEkMVzbEhpmsYyzaM=}
     dependencies:
@@ -2223,6 +2246,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       kind-of: 6.0.3
+    dev: true
+
+  /mantis-querist/0.5.0:
+    resolution: {integrity: sha1-hWHWCp8OYOc61zf8I3UoYu9i0bU=}
+    dependencies:
+      stylus: 0.53.0
     dev: true
 
   /map-cache/0.2.2:
@@ -2305,6 +2334,14 @@ packages:
     resolution: {integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=}
     dependencies:
       dom-walk: 0.1.2
+    dev: true
+
+  /minimatch/0.3.0:
+    resolution: {integrity: sha1-J12O2qxPG7MyZHIInnlJyDlGmd0=}
+    deprecated: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
+    dependencies:
+      lru-cache: 2.7.3
+      sigmund: 1.0.1
     dev: true
 
   /minimatch/3.0.4:
@@ -3369,6 +3406,10 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sax/0.5.8:
+    resolution: {integrity: sha1-1HLbIo6zMcJQaw6MFVJK25OdEsE=}
+    dev: true
+
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
@@ -3402,6 +3443,10 @@ packages:
       is-extendable: 0.1.1
       is-plain-object: 2.0.4
       split-string: 3.1.0
+    dev: true
+
+  /sigmund/1.0.1:
+    resolution: {integrity: sha1-P/IfGYytIXX587eBhT/ZTQ0ZtZA=}
     dev: true
 
   /snapdragon-node/2.1.1:
@@ -3465,6 +3510,13 @@ packages:
 
   /source-map-url/0.4.1:
     resolution: {integrity: sha512-cPiFOTLUKvJFIg4SKVScy4ilPPW6rFgMgfuZJPNoDuMs3nC1HbMUycBoJw77xFIp6z1UJQJOfx6C9GMH80DiTw==}
+    dev: true
+
+  /source-map/0.1.43:
+    resolution: {integrity: sha1-wkvBRspRfBRx9drL4lcbK3+eM0Y=}
+    engines: {node: '>=0.8.0'}
+    dependencies:
+      amdefine: 1.0.1
     dev: true
 
   /source-map/0.4.4:
@@ -3631,6 +3683,18 @@ packages:
       browserslist: 4.17.2
       postcss: 8.3.8
       postcss-selector-parser: 6.0.6
+    dev: true
+
+  /stylus/0.53.0:
+    resolution: {integrity: sha1-a1HnZlCX+N1KaWXhTO6l5Ln9cko=}
+    hasBin: true
+    dependencies:
+      css-parse: 1.7.0
+      debug: 3.2.7
+      glob: 3.2.11
+      mkdirp: 0.5.1
+      sax: 0.5.8
+      source-map: 0.1.43
     dev: true
 
   /stylus/0.54.8:

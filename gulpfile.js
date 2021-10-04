@@ -6,14 +6,14 @@ const 	{ 	src,
 			watch	}	= require('gulp');
 
 const		auto		= require('autoprefixer'),
-			axis		= require('axis'),
 			color		= require('postcss-colorblind'),
 			cssnano		= require('cssnano'),
 			// magic		= require('postcss-font-magician'),
+			jeet		= require('jeet'),
 			maps		= require('gulp-sourcemaps'),
 			post		= require('gulp-postcss'),
+			querist		= require('mantis-querist'),
 			rename		= require("gulp-rename"),
-			rupture		= require('rupture'),
 			stylus		= require('gulp-stylus'),
 			// svgo		= require('postcss-svgo'),
 			typo		= require('typographic'),
@@ -43,9 +43,9 @@ function styles () {
 			.pipe(maps.init())
 			.pipe(stylus({
 				use: [
-					axis(),
+					jeet(),
+					querist(),
 					typo(),
-					rupture()
 				]
 			}))
 			.pipe(post(processors))
