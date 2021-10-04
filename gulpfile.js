@@ -1,21 +1,21 @@
-const 	{ 	gulp,
-			src,
+const 	{ 	src,
 			dest,
-			parallel,
+			// parallel,
 			series,
 			task,
 			watch	}	= require('gulp');
 
 const		auto		= require('autoprefixer'),
+			axis		= require('axis'),
 			color		= require('postcss-colorblind'),
 			cssnano		= require('cssnano'),
-			magic		= require('postcss-font-magician'),
+			// magic		= require('postcss-font-magician'),
 			maps		= require('gulp-sourcemaps'),
 			post		= require('gulp-postcss'),
 			rename		= require("gulp-rename"),
 			rupture		= require('rupture'),
 			stylus		= require('gulp-stylus'),
-			svgo		= require('postcss-svgo'),
+			// svgo		= require('postcss-svgo'),
 			typo		= require('typographic'),
 			ugly		= require('gulp-terser-js');
 
@@ -43,6 +43,7 @@ function styles () {
 			.pipe(maps.init())
 			.pipe(stylus({
 				use: [
+					axis(),
 					typo(),
 					rupture()
 				]
@@ -51,7 +52,7 @@ function styles () {
 			.pipe(rename('wellspring.css'))
 			.pipe(maps.write('./'))
 			.pipe(dest(path.styles.dest));
-};
+}
 
 function scripts () {
 	return src(path.scripts.src)
@@ -62,20 +63,11 @@ function scripts () {
 		}))
 		.pipe(rename('wellspring.js'))
 		.pipe(dest(path.scripts.dest));
-};
-
-function tasks (cb) {
-	parallel(
-		styles,
-		scripts
-	),
-		cb()
-};
+}
 
 task('watch', () => {
-		watch('**/*.styl', styles),
+		watch('**/*.styl', styles)
 		watch('**/*.js', scripts)
 	});
 
-// task('default', series(tasks, ['watch']));
 task('default', series(styles, scripts, ['watch']));
