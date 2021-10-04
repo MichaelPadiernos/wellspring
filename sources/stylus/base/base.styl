@@ -1,21 +1,16 @@
+html,
 body
-	
-	&:before
-		content ''
-		display block
-		background-color primary-accent
-		position absolute
-		height 0.45rem
-		width 100vw
-	
+	height 100vh
+	overflow hidden
+body
 	#canvas-wrapper,
 	#content-wrapper
 		display flex
 		flex-direction column
 	#content-wrapper
 		flex-grow 1
+	.dialog-off-canvas-main-canvas,
 	#canvas-wrapper
-		min-height 100vh
-		
+		height 100%
 		header, main, footer
 			padding padding-default
