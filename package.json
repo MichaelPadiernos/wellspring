@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.6",
-    "axis": "^1.0.0",
+    "bookcase-framework": "^1.0.3",
     "cssnano": "^5.0.8",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
@@ -19,15 +19,14 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-stylus": "^2.7.0",
     "gulp-terser-js": "^5.2.2",
-    "jeet": "^7.2.0",
+    "koffie": "^1.1.4",
     "lazypipe": "^1.0.2",
-    "mantis-querist": "^0.5.0",
     "postcss": "^8.3.8",
     "postcss-colorblind": "^1.0.0",
     "postcss-font-magician": "^3.0.0",
     "postcss-svgo": "^5.0.2",
-    "rupture": "^0.7.1",
+    "rfs": "^9.0.6",
     "stylus": "^0.55.0",
-    "typographic": "^3.0.0"
+    "typesettings": "^4.2.0"
   }
 }
